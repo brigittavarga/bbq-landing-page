@@ -1,0 +1,149 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+    height: 100vh;
+}
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.3125rem;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+}
+
+.intro-text {
+    font-size: 0.625rem;
+    margin: 0;
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro {
+    background-image: url(background.jpg);
+    background-color: #404040;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5em .25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+button {
+    width: 100%;
+    margin-bottom: .75em;
+    font-family: inherit;
+    text-align: inherit;
+    padding: .60em;
+    border-radius: 0.3em;
+    outline: none;
+    border: 1px solid #706f6f;    
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+input:focus {
+    transform: scale(1.02);
+}
+
+button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    color: #fff;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.05);
+}
+  
+@media (min-width: 687px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3em;
+    }
+}
+   
